@@ -35,8 +35,7 @@ body {
   display: flex;
   background-color: white;
   border-radius: 10px;
-  width: 80%;
-  height: 380px;
+  width: 95%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -46,8 +45,11 @@ body {
   width: 35%;
   background-color: hsl(134.67deg 56.25% 31.37%);
   position: relative;
+}
 
-
+.right-container {
+  max-width: 65%;
+  padding-left: 15px;
 }
 
 .contact-container {
@@ -102,4 +104,29 @@ body {
 
 .icons>label {
   margin-left: 5px;
+}
+
+.description {
+  text-align: justify;
+  max-width: 100%;
+  line-height: 1.5;
+  padding-right: 20px;
+}
+
+.right-container>h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.right-container>h1>strong {
+  color: green;
+}
+
+.right-container>h5 {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.skills-container {
+  display: flex;
 }

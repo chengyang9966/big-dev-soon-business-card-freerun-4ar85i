@@ -33,12 +33,73 @@ body {
 
 .center {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: white;
   border-radius: 10px;
   width: 80%;
   height: 380px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.left-container {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 35%;
+  background-color: hsl(134.67deg 56.25% 31.37%);
+  position: relative;
+
+
+}
+
+.contact-container {
+  bottom: 10%;
+  position: absolute;
+  width: 100%;
+
+}
+
+.text-container {
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.text-container>label {
+  font-size: 16px;
+}
+
+.text-container>span {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.horizontal-line {
+  height: 20px;
+  width: 100%;
+  background-color: hsl(0deg 0% 87.84%);
+  margin-bottom: 15px;
+}
+
+.icons-container {
+  margin-top: 10px;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  ;
+}
+
+.icons-container>a>svg {
+  fill: hsl(130.59deg 24.64% 72.94%);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons>svg {
+  fill: hsl(130.59deg 24.64% 72.94%);
+}
+
+.icons>label {
+  margin-left: 5px;
 }

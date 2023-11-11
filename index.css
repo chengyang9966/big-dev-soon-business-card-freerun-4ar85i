@@ -17,3 +17,28 @@
 .footer span {
   font-size: 14px;
 }
+
+body {
+  background-color: hsl(122deg 37.5% 84.31%);
+  position: relative;
+}
+
+.container {
+  height: calc(100vh - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  height: 380px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}

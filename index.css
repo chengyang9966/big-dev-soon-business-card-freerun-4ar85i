@@ -1,4 +1,14 @@
 /* This is an example CSS file, feel free to remove/edit it anytime */
+* {
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+  max-width: 100%;
+}
+
+
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -28,11 +38,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: calc(100% - 15px);
 
 }
 
 .center {
-  display: flex;
   background-color: white;
   border-radius: 10px;
   width: 95%;
@@ -42,21 +52,24 @@ body {
 .left-container {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 35%;
+  /* width: 35%; */
   background-color: hsl(134.67deg 56.25% 31.37%);
   position: relative;
 }
 
 .right-container {
-  max-width: 65%;
+  /* max-width: 65%; */
   padding-left: 15px;
 }
 
 .contact-container {
   bottom: 10%;
-  position: absolute;
+  position: relative;
   width: 100%;
-
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .text-container {
@@ -129,4 +142,66 @@ body {
 
 .skills-container {
   display: flex;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For tablets: */
+  .row{
+    flex-direction: column;
+  }
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  [class*="col-"] {
+    order: 10;
+  }
+  .order-s-first{
+    order: 1;
+  }
+
+  .left-container {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .contact-container{
+    padding-top: 50px;
+  }
+  .skills-container {
+   flex-direction: column;
+   margin:0px;
+   padding:20px 0px;
+  }
+  .skills-container>ul{
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .row{
+    flex-direction: row;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
